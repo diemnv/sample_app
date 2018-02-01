@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }
 
 	private
-	def to_down_case
-		email.downcase!
-	end
+  	def to_down_case
+  		email.downcase!
+  	end
 end
